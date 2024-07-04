@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mediaquery.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Prima
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects">Project</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Hello!
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li>
+                    <a href="#about" onclick="toggleMenu()">About</a>
+                </li>
+                <li>
+                    <a href="#experience" onclick="toggleMenu()">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects" onclick="toggleMenu()">Project</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="toggleMenu()">Contact</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="../assets/Prima-Putra2.png" alt="John Doe Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">
+                Hello, I'm
+            </p>
+            <h1 class="title">
+                Prima
+            </h1>
+            <p class="section__text__p2">iOS Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('../assets/Prima_Putra_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href= './#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="../assets/linkedin.png" 
+                alt="My LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href = 'https://www.linkedin.com/in/primaputra31/'"
+                />
+                <img 
+                src="../assets/github.png" 
+                alt="My Github Profile" 
+                class="icon" 
+                onclick="location.href = 'https://github.com/PrimC0de'"
+                />
+            </div>     
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="../assets/second-pic.png" 
+                alt="Profile picture" 
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="../assets/experience.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>a year <br>iOS Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="../assets/education.png" 
+                        alt="Education icon" 
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree (S.Kom)</p>
+                        <small>Bina Nusantara University</small>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo tempor libero, quis pellentesque tortor blandit ut. Ut tristique velit non nisi blandit aliquet. Duis viverra felis sed lobortis semper. Donec id eros vel nibh egestas ornare in eu ante. Nullam sed erat at orci venenatis accumsan eu eget tortor. Maecenas suscipit lorem non rutrum consectetur. Etiam eget leo et eros malesuada porta. Proin nec mauris velit. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="../assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href = './#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">UI/UX Design and Implementation</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <p>Collaborated with designers to create intuitive and visually appealing user interfaces.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <p>Implemented user-friendly features that improved user engagement and retention</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Core Technologies and Frameworks</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <p>Utilized SwiftUI, UIKit, Core Data, and CreateML to build responsive and efficient applications.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <p>Added the usage of Widget, Haptics feature for ease in access</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+            </div>
+            <div class="about-containers">
+                
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Collaboration and Teamwork</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <p>Worked closely with cross-functional teams to deliver high-quality applications.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <p>Facilitated effective communication between designers, product managers, and backend developers.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Project Management and Agile Practices</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <p>Participated in Agile sprints, Scrum, Kanban, Waterfall, daily stand-ups, and sprint planning.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="../assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <p>Contributed to retrospectives and continuous improvement processes.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        </div>
+        </div>
+        
+        <img 
+        src="../assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="../assets/Wisesplit.png" alt="Wisesplit" class="project-img" />
+                                    
+                                </div>
+                                <div class="description-container">
+                                    <br>                                   
+                                    <p>Manage your finances effortlessly with our iOS app designed for seamless financial tracking and split billing. Easily divide expenses among friends and track contributions, ensuring fair and transparent bill settlements. Simplify group finances and payments with intuitive features tailored for efficient bill splitting on the go.</p>                                
+                                </div>
+                                    <p class="experience-sub-title project-title">Wisesplit</p>
+                                        <div class="btn-container">
+                                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/beni2704/WiseSplit'">Github</button>
+                                            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                                        </div>
+                            </div>
+                            </div>
+                        <div class="carousel-item">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="../assets/RemindMe.png" alt="RemindMe" class="project-img" />
+                                
+                            </div>
+                            <div class="description-container">
+                                <br>
+                                <p>RemindMe is the ultimate companion app for
+                                    learners at the Apple Developer Academy
+                                    @BINUS, designed to keep you on track and
+                                    ensure you never miss a clock-in or clock-out
+                                    time again. With RemindMe, you can say
+                                    goodbye to the stress of tracking your
+                                    attendance and focus on what truly matters—
+                                    your learning experience.</p>
+                            </div>
+                                <p class="experience-sub-title project-title">RemindMe</p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PrimC0de/SwfitReminderApp'">Github</button>
+                                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                                    </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="../assets/AR Id Card.png" alt="Ar ID Card" class="project-img" />
+                                
+                            </div>
+                            <div class="description-container">
+                                <br>
+                                <p>Meet Learner ID AR: Using advanced computer vision and AR technology, it scans ID cards, retrieves learner data instantly from Notion, and overlays interactive 3D info in the physical world. 
+                                    Ideal for education, events, and personalized learning, it's a cutting-edge, efficient solution.
+                                    With its seamless integration, it simplifies data access and interaction.</p>
+                            </div>
+                                <p class="experience-sub-title project-title">AR Id Card</p>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PrimC0de/NanoTesting'">Github</button>
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@prima.putra02/sat-set-arkit-a84dcd5a066b'">Medium</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="details-container color-container">
+                                <div class="article-container .penggo-container">
+                                    <img src="../assets/PengGo.png" alt="PengGo" class="project-img" />
+                                </div>
+                                <div class="description-container">
+                                    <br>
+                                    <p>An app that can reduce and regulate career anxiety for young adults from 20-23 years old when they are entering their early career phase by implementing a challenge-based app to help users track their progress in their career preparation.
+                                         The app provides structured challenges and by completing these challenges, users can gain confidence and practical skills, making the transition from education to employment smoother and less stressful.</p>
+                                </div>
+                                    <p class="experience-sub-title project-title">PengGo</p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MC1-Anxiety'">Github</button>
+                                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                                    </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="../assets/MRT.png" alt="MRT Jakarta (Collab)" class="project-img" />
+                                </div>
+                                <div class="description-container">
+                                    <br>
+                                    <p>MRT J App: Redesigned for a better user experience, featuring an intuitive interface, station arrival notifications, and improved ticketing for a smoother MRT J service journey. This updated version ensures passengers can effortlessly navigate through their journey with real-time updates and streamlined ticketing processes, enhancing overall convenience and satisfaction. With enhanced accessibility features, it caters to a diverse range of passengers, ensuring a seamless travel experience for everyone.</p>
+                                </div>
+                                    <p class="experience-sub-title project-title">MRT Jakarta (Collab)</p>
+                                    <div class="btn-container">
+                                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MC1-Anxiety'">Github</button> -->
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/16Khxgnoh4WGAs5PlP2g80BclyoMAneF-/view'">Live Demo</button>
+                                    </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="../assets/Roots.png" alt="Roots" class="project-img" />
+                                </div>
+                                <div class="description-container">
+                                    <br>
+                                    <p>Roots is an app to help masturbation-addict
+                                        stopping their masturbation habit totally.
+                                        Roots consists of user journey and insights
+                                        needed for user to break their addiction easily
+                                        and painlessly. It is essential for the user to
+                                        keep consistent in building this new habit and
+                                        mindset, and Roots facilitate them to create a
+                                        PMO-free journey.</p>
+                                </div>
+                                    <p class="experience-sub-title project-title">Roots</p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/je-von/zip-it'">Github</button>
+                                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                                    </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="../assets/Pawpicks.png" alt="Pawpicks" class="project-img" />
+                                </div>
+                                <div class="description-container">
+                                    <br>
+                                    <p>Your pet food advisor. Tailored recommendations for dogs and cats based on their unique needs, simplifying the selection process. Input your pet's details for swift, suitable suggestions. Whether you're looking for specialized diets, allergy-friendly options, or nutritional supplements, our advisor ensures your pet receives personalized recommendations that support their health and well-being.</p>
+                                </div>
+                                    <p class="experience-sub-title project-title">Pawpicks</p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/NTDEptCj9dYxgquhds8FVF/Design?node-id=318-5593&t=JHhmOUk6IhEbrvHT-0'">Design</button>
+                                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                                    </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="details-container color-container">
+                                <div class="article-container">
+                                    <img src="../assets/EVA.png" alt="EVA" class="project-img" />
+                                </div>
+                                <div class="description-container">
+                                    <br>
+                                    <p>Eva is an innovative iOS application tailored specifically for caregivers, aimed at enhancing their understanding and response to stroke patients experiencing speech difficulties. By providing real-time transcription, Eva empowers caregivers to offer timely and accurate support, significantly improving the patient-caregiver interaction and overall quality of care.</p>
+                                </div>
+                                    <p class="experience-sub-title project-title">EVA</p>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PapaDevilno/CareTalk'">Github</button>
+                                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                                    </div>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" onclick="prevSlide()">‹</button>
+                    <button class="carousel-control-next" onclick="nextSlide()">›</button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(0)"></span>
+                        <span class="indicator" onclick="goToSlide(1)"></span>
+                        <span class="indicator" onclick="goToSlide(2)"></span>
+                        <span class="indicator" onclick="goToSlide(3)"></span>
+                        <span class="indicator" onclick="goToSlide(4)"></span>
+                        <span class="indicator" onclick="goToSlide(5)"></span>
+                        <span class="indicator" onclick="goToSlide(6)"></span>
+                        <span class="indicator" onclick="goToSlide(7)"></span>
+                    </div>
+                </div>
+                  
+                  
+
+            </div>
+        </div>
+        <img 
+        src="../assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href = './#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="../assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">prima.putra02@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="../assets/linkedin.png" 
+                alt="LinkedIn icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/primaputra31/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Project</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Prima Putra. All Rights Reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
